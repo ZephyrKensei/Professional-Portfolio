@@ -170,6 +170,10 @@ header {
     );
   }
 
+  .section__title--intro {
+    margin: -45px 0 10px 0;
+  }
+
   .section__subtitle--intro {
     align-self: start;
     grid-column: -1 / 1;
@@ -339,7 +343,7 @@ header {
 }
 
 .slider-container .slide img {
-  heigth: auto;
+  height: auto;
   width: 100%;
 }
 
