@@ -12,11 +12,6 @@ navLinks.forEach(link => {
 })
 
 
-
-
-
-
-
 let slides = document.querySelectorAll(".slide");
 let indicator = document.querySelectorAll(".indicator");
 let prev = document.querySelector(".prev");
