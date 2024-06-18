@@ -1,0 +1,110 @@
+@media screen and (min-width: 480px) {
+   
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 335px;
+    position: relative;
+    z-index: 2;
+    --c: 50px;
+    --p: 30px;
+    --d: 10px;
+    display: inline-block;
+    padding: var(--p);
+    background: radial-gradient(farthest-side at 0 0, #000, #0000) 0 0 /
+        var(--c) var(--c),
+      radial-gradient(farthest-side at 100% 100%, #000, #0000) 100% 100% /
+        var(--c) var(--c),
+      linear-gradient(#fff 0 0) 50% 50% / calc(100% - var(--p))
+        calc(100% - var(--p)),
+      linear-gradient(#0000, #000 25% 75%, #0000) 50% 50% /
+        calc(100% - var(--p)) calc(100% - var(--d)),
+      linear-gradient(90deg, #0000, #000 25% 75%, #0000) 50% 50% /
+        calc(100% - var(--d)) calc(100% - var(--p)),
+      radial-gradient(farthest-side at 0 100%, #00000018, #0000)
+        calc(100% - var(--d) * 0.5) calc(var(--d) * 0.5) / var(--d) var(--d),
+      radial-gradient(farthest-side at 100% 0, #00000018, #0000)
+        calc(var(--d) * 0.5) calc(100% - var(--d) * 0.5) / var(--d) var(--d);
+    background-repeat: no-repeat;
+    clip-path: polygon(
+      0 var(--c),
+      var(--c) 0,
+      100% 0,
+      100% calc(100% - var(--c)),
+      calc(100% - var(--c)) 100%,
+      0 100%
+    );
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+    min-width: 230px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service + .service {
+    margin-left: 2em;
+  }
+
+  .service {
+    margin-bottom: 0;
+  }
+}
