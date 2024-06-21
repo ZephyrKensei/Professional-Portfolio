@@ -1,4 +1,4 @@
-@media screen and (min-width: 420px) {
+@media screen and (max-width: 480px) {
   section {
     padding: 2em 2em;
   }
