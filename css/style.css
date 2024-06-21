@@ -118,7 +118,6 @@ header {
   color: var(--color-light);
 }
 
-
 /*  My services section  */
 
 .my-services {
@@ -153,7 +152,6 @@ header {
   max-width: 400px;
   margin: 0 auto 2em;
 }
-
 
 .about-me {
   max-width: 1000px;
@@ -193,7 +191,6 @@ header {
   );
 }
 
-
 /* My Work */
 
 .my-work {
@@ -210,7 +207,6 @@ header {
 .slider-container {
   display: block;
   margin: 0 auto;
-  min-height: 390px;
   height: 50%;
   width: 90%;
   max-width: 700px;

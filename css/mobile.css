@@ -1,5 +1,19 @@
-@media screen and (min-width: 480px) {
-   
+@media screen and (min-width: 420px) {
+  section {
+    padding: 2em 2em;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .section__title {
+    margin-bottom: 1em;
+  }
+
+  .section__subtitle--work {
+    margin-bottom: 1em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -90,7 +104,6 @@
     min-width: 230px;
   }
 }
-
 
 @media screen and (min-width: 992px) {
   .services {
